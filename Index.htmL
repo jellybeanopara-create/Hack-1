@@ -1,1 +1,84 @@
-# Hack-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phishing Awareness Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #172033;
+      padding: 24px;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+    }
+    .warning {
+      background: #fff1d6;
+      padding: 14px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 12px;
+      border: 0;
+      border-radius: 8px;
+      background: #174ea6;
+      color: white;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Phishing Awareness Lab</h1>
+
+    <p>
+      Learn how to recognise deceptive messages
+      and suspicious sign-in pages.
+    </p>
+
+    <div class="warning">
+      <strong>Training example</strong>
+      <p>
+        "Your account will close in 10 minutes!
+        Click this unfamiliar link to verify your password."
+      </p>
+    </div>
+
+    <h2>Can you spot the warning signs?</h2>
+    <ul>
+      <li>Urgent threats and pressure.</li>
+      <li>Unexpected requests for passwords.</li>
+      <li>Links with unfamiliar or misspelled domains.</li>
+      <li>Messages pretending to be trusted organisations.</li>
+    </ul>
+
+    <button onclick="showAnswer()">
+      Reveal the answer
+    </button>
+
+    <p id="answer" hidden>
+      This is suspicious because it uses urgency,
+      threatens account closure and asks for a password.
+      Visit the official website directly instead.
+    </p>
+
+    <p><strong>Safety:</strong> Educational demo only.
+      Not affiliated with any company. No credentials
+      are collected.
+    </p>
+  </main>
+
+  <script>
+    function showAnswer() {
+      document.getElementById("answer").hidden = false;
+    }
+  </script>
+</body>
+</html>
